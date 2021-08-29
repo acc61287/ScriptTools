@@ -1,0 +1,1 @@
+find . -name '*.mp4' -or -name '*.srt' | sed -e 'p;s/---\ \[\ FreeCourseWeb.com\ \]\ ---//g' | xargs -d '\n' -n2 mv
